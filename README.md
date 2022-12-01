@@ -117,7 +117,7 @@ sample response
 }
 
 
-#Sensor Interface
+# Sensor Interface
 
 There is a service for notifying the irrigation sensor. This service is in the PlotService.java file under the services package. 
 
@@ -127,7 +127,7 @@ A dummy sensor interface is present in the SensorController.java file. This retu
 
 The sensor uses a circuit breaker whose configurations are set in the application.properties file. When the sensor interface goes down, the circuit breaker calls the fallback method which is the alerts service. This sends a message indicating that the service was unable to communicate to the sensor.
 
-#Unit Tests
+# Unit Tests
 
 There are various unit tests in the tests package for testing the correctness of the various single units of the application. 
 
